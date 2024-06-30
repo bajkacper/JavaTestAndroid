@@ -1,0 +1,118 @@
+{
+  "questions": [
+    {
+      "question": "Dlaczego w nazwach plików klasowych po znaku $ są liczby 1 i 2?",
+      "options": [
+        "Ponieważ klasa zawierała dwie klasy wewnętrzne o nazwach 1 i 2",
+        "Ponieważ klasa zawierała dwie anonimowe klasy wewnętrzne",
+        "Ponieważ klasa zawierała dwie nazwane klasy abstrakcyjne",
+        "Ponieważ klasa zawierała dwie nazwane klasy adaptacyjne"
+      ],
+      "answer": [1]
+    },
+    {
+      "question": "W języku Java rozkład komponentów (przycisków) dla biblioteki Swing w oknie aplikacji realizuje klasa:",
+      "options": [
+        "FlowLayout",
+        "GridLayout",
+        "BorderLayout",
+        "BoxLayout"
+      ],
+      "answer": [0, 1, 2, 3]
+    },
+    {
+      "question": "Wykonanie poniższego programu spowoduje wyświetlenie:",
+      "code": "import java.util.List; import java.util.Arrays; public class A { public static void main(String[] args) { List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6); list.forEach((int n) -> System.out.print('List:' + n)); }}",
+      "options": [
+        "List:1List:2List:3List:4List:5List:6",
+        "List:123456",
+        "error",
+        "List:{123456}"
+      ],
+      "answer": [2]
+    },
+    {
+      "question": "W języku Java w klasie serwletów javax.servlet.http.HttpServlet za obsługę żądań typu GET odpowiada metoda:",
+      "options": [
+        "processRequest()",
+        "doGet()",
+        "doPost()",
+        "Język Java nie obsługuje żądań typu GET"
+      ],
+      "answer": [1]
+    },
+    {
+      "question": "Wykonanie poniższego kodu języka Java powoduje wyświetlenie na konsoli:",
+      "code": "class MyClass { public static void main(String args[]) { String s1 = new String('Java'); String s2 = new String('Java'); if (s1==s2) System.out.print('A'); else System.out.print('B'); if (s1.equals(s2)) System.out.print('C'); else System.out.print('D'); }}",
+      "options": [
+        "AC",
+        "BC",
+        "BD",
+        "AD"
+      ],
+      "answer": [1]
+    },
+    {
+      "question": "Która składnia dostępu do kolekcji ArrayList<String> myList = new ArrayList<String>(); za pomocą pętli for jest poprawna:",
+      "options": [
+        "for (int i = 0; i < myList.size(); i++) { System.out.println(myList(i)); }",
+        "for (String s : myList) { System.out.println(s); }",
+        "for (int s : myList) { System.out.println(s); }",
+        "for (int s = 0) { System.out.println(s); }"
+      ],
+      "answer": [1]
+    },
+    {
+      "question": "Które zapisy referencji do metody i wyrażenia Lambda są równoważne?",
+      "options": [
+        "System.out::println x->System.out.println()",
+        "JButton::new () -> new JButton()",
+        "int[]::new x->new int[x]",
+        "String::valueOf x -> String.valueOf(x)"
+      ],
+      "answer": [0, 1, 2, 3]
+    },
+    {
+      "question": "Wykonanie poniższego programu spowoduje wyświetlenie:",
+      "code": "interface B<T> { void myMethod(T arg); } public class A<T> implements B<T> { public static void main(String[] args) { A<Double> obj = new A<Double>(); obj.myMethod(123); } public void myMethod(T t) { System.out.println(t); }}",
+      "options": [
+        "123",
+        "Programu nie można uruchomić, ponieważ nie da się skompilować",
+        "123.0",
+        "Program da się skompilować, a przy wykonaniu zgłosi wyjątek"
+      ],
+      "answer": [3]
+    },
+    {
+      "question": "Głównym elementem pliku AndroidManifest.xml jest?",
+      "options": [
+        "activity",
+        "manifest",
+        "application",
+        "android"
+      ],
+      "answer": [2]
+    },
+    {
+      "question": "Które wyrażenie posortuje tablicę str dla aplikacji przedstawionej poniżej?",
+      "code": "import java.util.Arrays; public class A { public static void main(String[] args) { String[] str={'ab','a','abcd','abc'}; Arrays.sort(str, // Tutaj wyrażenie z lewej ); for (String i:str) { System.out.println(i); }}",
+      "options": [
+        "(s1,s2)->return (s1.length()-s2.length());",
+        "(s1,s2)->{(s1.length()-s2.length());}",
+        "(s1,s2)->{return (s1.length()-s2.length());}",
+        "s1,s2->{return (s1.length()-s2.length());}"
+      ],
+      "answer": [2]
+    },
+    {
+      "question": "Klasa Activity platformy Java Android znajduje się w pakiecie?",
+      "options": [
+        "android.activity",
+        "android.app",
+        "android.widget",
+        "android.application"
+      ],
+      "answer": [1]
+    }
+  ]
+}
